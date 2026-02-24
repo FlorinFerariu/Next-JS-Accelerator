@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --background: 255 255 255;
+  --foreground: 15 23 42;
+
+  --card: 255 255 255;
+  --card-foreground: 15 23 42;
+
+  --border: 229 231 235;
+  --muted: 245 245 245;
+}
+
+.dark {
+  --background: 10 10 10;
+  --foreground: 248 250 252;
+
+  --card: 23 23 23;
+  --card-foreground: 248 250 252;
+
+  --border: 38 38 38;
+  --muted: 30 30 30;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+}
+
+* {
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+}
