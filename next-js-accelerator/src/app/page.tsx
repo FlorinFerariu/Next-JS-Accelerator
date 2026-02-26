@@ -1,11 +1,7 @@
-import { Header } from "@/components/layouts/header";
-
 export default function Home() {
   return (
     <>
-      <Header />
-
-      <main className="mx-auto max-w-6xl px-6 py-10 flex justify-center">
+      <main className="mx-auto max-w-6xl px-6 py-10 flex justify-center dark">
         <div className="flex flex-col gap-2">
           <h1 className="text-2xl font-semibold tracking-tight text-center">
             Build your next project faster

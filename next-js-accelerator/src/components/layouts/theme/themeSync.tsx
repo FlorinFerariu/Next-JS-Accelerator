@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { useThemeStore } from "@/store/theme-store";
+import { useThemeStore } from "@/store/useThemeStore";
 
 export function ThemeSync() {
   const { setTheme } = useTheme();

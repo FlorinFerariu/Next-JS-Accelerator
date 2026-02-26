@@ -12,14 +12,14 @@
 }
 
 .dark {
-  --background: 10 10 10;
+  --background: 36 36 36;
   --foreground: 248 250 252;
 
-  --card: 23 23 23;
+  --card: 45 45 45;
   --card-foreground: 248 250 252;
 
-  --border: 38 38 38;
-  --muted: 30 30 30;
+  --border: 68 68 68;
+  --muted: 58 58 58;
 }
 
 html {
