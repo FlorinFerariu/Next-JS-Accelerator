@@ -1,6 +1,8 @@
+import "./globals.css";
+
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-import "./globals.css";
+import RouteShell from "@/components/layouts/shell/routeShell";
 
 export const metadata: Metadata = {
   title: "SaaS APP",
@@ -14,8 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="min-h-screen bg-[rgb(var(--background))] text-[rgb(var(--foreground))]">
-        <Providers>{children}</Providers>
+      <body className="min-h-screen">
+        <Providers>
+          <RouteShell>{children}</RouteShell>
+        </Providers>
       </body>
     </html>
   );

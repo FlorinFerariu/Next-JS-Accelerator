@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import { useThemeStore } from "@/store/theme-store";
+import { useThemeStore } from "@/store/useThemeStore";
 import { Moon, Sun } from "lucide-react";
 
 export function ThemeToggle() {
@@ -21,11 +21,11 @@ export function ThemeToggle() {
     <button
       type="button"
       onClick={() => toggle(resolvedTheme === "dark" ? "dark" : "light")}
-      className="rounded-xl border border-neutral-300 bg-white px-3 py-2 text-sm shadow-sm transition hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-900 dark:hover:bg-neutral-800"
+      className="inline-flex h-9 w-9 items-center justify-center rounded-xl border-[rgb(var(--border))] text-[rgb(var(--foreground))] hover:bg-[rgb(var(--muted))]"
       aria-label="Toggle theme"
       title={`Theme: ${theme}`}
     >
-      {isDark ? <Sun /> : <Moon color="white" />}
+      {isDark ? <Sun /> : <Moon />}
     </button>
   );
 }

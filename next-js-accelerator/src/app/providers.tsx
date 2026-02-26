@@ -2,7 +2,7 @@
 
 import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes";
-import { ThemeSync } from "@/components/layouts/theme-sync";
+import { ThemeSync } from "@/components/layouts/theme/themeSync";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -11,7 +11,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
         attribute="class"
         defaultTheme="dark"
         disableTransitionOnChange
-        storageKey="na-theme"
+        storageKey="na-ui-theme"
+        enableSystem={false}
       >
         <ThemeSync />
         {children}
